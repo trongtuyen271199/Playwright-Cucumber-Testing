@@ -15,11 +15,11 @@
             "line": 4,
             "name": "I have a valid chat id and message",
             "match": {
-              "location": "features\\step_definitions\\chatbot.step.js:11"
+              "location": "features/step_definitions/chatbot.step.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 1263999
+              "duration": 463707
             }
           },
           {
@@ -28,11 +28,11 @@
             "line": 5,
             "name": "I send a POST request to the chatbot API",
             "match": {
-              "location": "features\\step_definitions\\chatbot.step.js:18"
+              "location": "features/step_definitions/chatbot.step.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 146195500
+              "duration": 538515250
             }
           },
           {
@@ -41,15 +41,20 @@
             "line": 6,
             "name": "I should receive a status code 200",
             "match": {
-              "location": "features\\step_definitions\\chatbot.step.js:32"
+              "location": "features/step_definitions/chatbot.step.js:32"
             },
             "result": {
               "status": "passed",
-              "duration": 1632200
+              "duration": 2259542
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 2
+          }
+        ],
         "type": "scenario"
       }
     ],
@@ -58,6 +63,6 @@
     "keyword": "Feature",
     "name": "Chatbot API",
     "tags": [],
-    "uri": "features\\chatbot.feature"
+    "uri": "features/chatbot.feature"
   }
 ]
