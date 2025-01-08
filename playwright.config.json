@@ -1,0 +1,9 @@
+module.exports = {
+  testDir: 'tests',  // Đảm bảo Playwright tìm kiếm các file test trong thư mục này
+  use: {
+    timeout: 60000,
+    headless: true,
+    viewport: { width: 1280, height: 720 },
+    baseURL: 'https://ai.ebk.vn',
+  },
+};
