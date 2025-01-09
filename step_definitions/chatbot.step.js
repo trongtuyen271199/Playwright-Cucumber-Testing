@@ -60,3 +60,5 @@ Then('I should receive a status code 200', async () => {
     throw error;  // Ném lại lỗi sau khi đã chụp ảnh màn hình
   }
 });
+
+test
