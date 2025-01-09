@@ -2,6 +2,11 @@
   "devDependencies": {
     "@cucumber/cucumber": "^7.0.0",
     "@playwright/test": "^1.49.1",
+    "cucumber-html-reporter": "^7.2.0",
     "playwright": "^1.49.1"
+  },
+  "scripts": {
+    "test": "npx cucumber-js --format json:reports/cucumber-report.json && node generate-report.js && start reports/cucumber-report.html",
+    "test:ui": "playwright test --ui"
   }
 }

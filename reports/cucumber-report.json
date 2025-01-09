@@ -4,22 +4,30 @@
     "elements": [
       {
         "description": "",
-        "id": "chatbot-api;send-a-message-to-the-chatbot-and-get-a-200-status-code",
+        "id": "chatbot-api-interaction;send-a-message-to-the-chatbot-and-get-a-200-status-code",
         "keyword": "Scenario",
         "line": 3,
         "name": "Send a message to the chatbot and get a 200 status code",
         "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 185000000
+            }
+          },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
             "name": "I have a valid chat id and message",
             "match": {
-              "location": "features/step_definitions/chatbot.step.js:11"
+              "location": "step_definitions\\chatbot.step.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 463707
+              "duration": 0
             }
           },
           {
@@ -28,11 +36,11 @@
             "line": 5,
             "name": "I send a POST request to the chatbot API",
             "match": {
-              "location": "features/step_definitions/chatbot.step.js:18"
+              "location": "step_definitions\\chatbot.step.js:33"
             },
             "result": {
               "status": "passed",
-              "duration": 538515250
+              "duration": 179000000
             }
           },
           {
@@ -41,28 +49,31 @@
             "line": 6,
             "name": "I should receive a status code 200",
             "match": {
-              "location": "features/step_definitions/chatbot.step.js:32"
+              "location": "step_definitions\\chatbot.step.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 2259542
+              "duration": 6000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 87000000
             }
           }
         ],
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 2
-          }
-        ],
+        "tags": [],
         "type": "scenario"
       }
     ],
-    "id": "chatbot-api",
+    "id": "chatbot-api-interaction",
     "line": 1,
     "keyword": "Feature",
-    "name": "Chatbot API",
+    "name": "Chatbot API interaction",
     "tags": [],
-    "uri": "features/chatbot.feature"
+    "uri": "features\\chatbot.feature"
   }
 ]
