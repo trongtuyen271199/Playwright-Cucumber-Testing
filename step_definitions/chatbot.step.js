@@ -61,4 +61,3 @@ Then('I should receive a status code 200', async () => {
   }
 });
 
-test
